@@ -1,37 +1,22 @@
-## Welcome to GitHub Pages
+# Xiaoyu Zhang
 
-You can use the [editor on GitHub](https://github.com/shiningrain/shiningrain.GitHub.io/edit/main/index.md) to maintain and preview the content for your website in Markdown files.
+Hello, my name is Xiaoyu Zhang. I'm a master student of Pro. Chao Shen in School of Cyber Science and Engineering at Xi'an Jiaotong University. My research interests include software engineering, machine learning and AI testing.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+## Publications
 
-### Markdown
+### [ICSE-21](https://conf.researchr.org/home/icse-2021)
+[***AUTOTRAINER: An Automatic DNN Training Problem Detection and Repair SystemTechnical***](./papers/Zhang2021ICSE.pdf)
+**Xiaoyu Zhang**, Juan Zhai, Shiqing Ma, Chao Shen
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+### [ASE-20](https://conf.researchr.org/home/ase-2020)
+[***Audee: Automated Testing for Deep Learning Frameworks***](./papers/Guo2020ASE.pdf)
+Qianyu Guo, Xiaofei Xie, Yi Li, **Xiaoyu Zhang**, Yang Liu, Li Xiaohong, Chao Shen
 
-```markdown
-Syntax highlighted code block
+## Education
+- M.S. in Cyberspace Security, Xi'an Jiaotong University, China, (2020 - now)
 
-# Header 1
-## Header 2
-### Header 3
+- B.S. in Automation, Xi'an Jiaotong University, China, (2016 - 2020)  
 
-- Bulleted
-- List
+### Contact
 
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/shiningrain/shiningrain.GitHub.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+**Email**: zxy0927@stu.xjtu.edu.cn

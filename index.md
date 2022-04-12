@@ -1,6 +1,7 @@
 # Xiaoyu Zhang
 
-Hello, my name is Xiaoyu Zhang. I'm a master student of Pro. Chao Shen in School of Cyber Science and Engineering at Xi'an Jiaotong University. My research interests include software engineering, machine learning and AI testing.
+Hello, my name is Xiaoyu Zhang. I'm a Ph.D. student of Pro. Chao Shen in School of Cyber Science and Engineering at Xi'an Jiaotong University.
+My research interests include software engineering, machine learning and AI testing.
 
 ## Publications
 
@@ -15,7 +16,8 @@ Hello, my name is Xiaoyu Zhang. I'm a master student of Pro. Chao Shen in School
 Qianyu Guo, Xiaofei Xie, Yi Li, **Xiaoyu Zhang**, Yang Liu, Li Xiaohong, Chao Shen
 
 ## Education
-- M.S. in Cyberspace Security, Xi'an Jiaotong University, China, (2020 - now)
+<!-- - M.S. in Cyberspace Security, Xi'an Jiaotong University, China, (2020 - now) -->
+- Ph.D in Cyberspace Security, Xi'an Jiaotong University, China, (2020 - now)
 
 - B.S. in Automation, Xi'an Jiaotong University, China, (2016 - 2020)  
 

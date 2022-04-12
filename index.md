@@ -16,7 +16,7 @@ My research interests include software engineering, machine learning and AI test
 Qianyu Guo, Xiaofei Xie, Yi Li, **Xiaoyu Zhang**, Yang Liu, Li Xiaohong, Chao Shen
 
 ## Education
-<!-- - M.S. in Cyberspace Security, Xi'an Jiaotong University, China, (2020 - now) -->
+
 - Ph.D in Cyberspace Security, Xi'an Jiaotong University, China, (2020 - now)
 
 - B.S. in Automation, Xi'an Jiaotong University, China, (2016 - 2020)  

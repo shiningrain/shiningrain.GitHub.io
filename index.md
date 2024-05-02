@@ -5,6 +5,16 @@ My research interests include software engineering, machine learning and AI test
 
 ## Publications
 
+### [FSE-24](https://conf.researchr.org/home/fse-2024)
+[***COSTELLO: Contrastive Testing for Embedding-Based Large Language Model as a Service Embeddings***](./papers\Jiang2024FSE.pdf)
+
+Weipeng Jiang, Juan Zhai, Shiqing Ma, **Xiaoyu Zhang**, Chao Shen
+
+### [TOSEM-23](https://dl.acm.org/journal/tosem/)
+[***AUTOTRAINER: An Automatic DNN Training Problem Detection and Repair SystemTechnical***](./papers/Zhang2021ICSE.pdf)
+
+Yuhan Zhi, Xiaofei Xie, Chao Shen, Jun Sun, **Xiaoyu Zhang**, Xiaohong Guan
+
 ### [ICSE-21](https://conf.researchr.org/home/icse-2021)
 [***AUTOTRAINER: An Automatic DNN Training Problem Detection and Repair SystemTechnical***](./papers/Zhang2021ICSE.pdf)
 
@@ -16,6 +26,8 @@ My research interests include software engineering, machine learning and AI test
 Qianyu Guo, Xiaofei Xie, Yi Li, **Xiaoyu Zhang**, Yang Liu, Li Xiaohong, Chao Shen
 
 ## Education
+
+- Visiting Student, Nanyang Technological University, Singapore, (2023 - now)
 
 - Ph.D in Cyberspace Security, Xi'an Jiaotong University, China, (2020 - now)
 

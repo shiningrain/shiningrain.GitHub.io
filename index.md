@@ -1,9 +1,19 @@
 # Xiaoyu Zhang
 
 Hello, my name is Xiaoyu Zhang. I'm a Ph.D. student of Pro. Chao Shen in School of Cyber Science and Engineering at Xi'an Jiaotong University.
-My research interests include software engineering, machine learning and AI testing.
+My research interests include software engineering, machine learning, and AI testing.
 
 ## Publications
+
+### [TDSC (2024)](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=8858)
+[***An Automated Monitoring and Repairing System for DNN Training***]()
+
+**Xiaoyu Zhang**, Chao Shen, Shiqing Ma, Juan Zhai, and Chenhao Lin.
+
+### [ISSTA-24](https://conf.researchr.org/home/issta-2024)
+[***Efficient DNN-Powered Software with Fair Sparse Models***]()
+
+Xuanqi Gao, Weipeng Jiang, Juan Zhai, Shiqing Ma, **Xiaoyu Zhang**, Chao Shen
 
 ### [FSE-24](https://conf.researchr.org/home/fse-2024)
 [***COSTELLO: Contrastive Testing for Embedding-Based Large Language Model as a Service Embeddings***](./papers\Jiang2024FSE.pdf)
@@ -11,7 +21,7 @@ My research interests include software engineering, machine learning and AI test
 Weipeng Jiang, Juan Zhai, Shiqing Ma, **Xiaoyu Zhang**, Chao Shen
 
 ### [TOSEM-23](https://dl.acm.org/journal/tosem/)
-[***AUTOTRAINER: An Automatic DNN Training Problem Detection and Repair SystemTechnical***](./papers/Zhang2021ICSE.pdf)
+[***Seed selection for testing deep neural networks***](./papers/Zhi2023TOSEM.pdf)
 
 Yuhan Zhi, Xiaofei Xie, Chao Shen, Jun Sun, **Xiaoyu Zhang**, Xiaohong Guan
 

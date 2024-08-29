@@ -6,17 +6,17 @@ My research interests include software engineering, machine learning, and AI tes
 ## Publications
 
 ### [TDSC (2024)](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=8858)
-[***An Automated Monitoring and Repairing System for DNN Training***]()
+[***An Automated Monitoring and Repairing System for DNN Training***](./papers/Xiaoyu2024TDSC_ready.pdf)
 
 **Xiaoyu Zhang**, Chao Shen, Shiqing Ma, Juan Zhai, and Chenhao Lin.
 
 ### [ISSTA-24](https://conf.researchr.org/home/issta-2024)
-[***Efficient DNN-Powered Software with Fair Sparse Models***]()
+[***Efficient DNN-Powered Software with Fair Sparse Models***](./papers/Gao2024ISSTA.pdf)
 
 Xuanqi Gao, Weipeng Jiang, Juan Zhai, Shiqing Ma, **Xiaoyu Zhang**, Chao Shen
 
 ### [FSE-24](https://conf.researchr.org/home/fse-2024)
-[***COSTELLO: Contrastive Testing for Embedding-Based Large Language Model as a Service Embeddings***](./papers\Jiang2024FSE.pdf)
+[***COSTELLO: Contrastive Testing for Embedding-Based Large Language Model as a Service Embeddings***](./papers/Jiang2024FSE.pdf)
 
 Weipeng Jiang, Juan Zhai, Shiqing Ma, **Xiaoyu Zhang**, Chao Shen
 

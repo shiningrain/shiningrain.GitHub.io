@@ -5,8 +5,13 @@ My research interests include software engineering, machine learning, and AI tes
 
 ## Publications
 
+### [TOSEM (2024)](https://dl.acm.org/journal/tosem/)
+[***DREAM: Debugging and Repairing AutoML Pipelines***](./papers/Zhang2024TOSEM.pdf)
+
+**Xiaoyu Zhang**, Juan Zhai, Shiqing Ma, Xiaohong Guan, and Chao Shen.
+
 ### [TDSC (2024)](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=8858)
-[***An Automated Monitoring and Repairing System for DNN Training***](./papers/Xiaoyu2024TDSC_ready.pdf)
+[***An Automated Monitoring and Repairing System for DNN Training***](./papers/Zhang2024TDSC.pdf)
 
 **Xiaoyu Zhang**, Chao Shen, Shiqing Ma, Juan Zhai, and Chenhao Lin.
 

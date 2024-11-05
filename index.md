@@ -1,6 +1,6 @@
 # Xiaoyu Zhang
 
-Hello, my name is Xiaoyu Zhang. I'm a Ph.D. student of Pro. Chao Shen in School of Cyber Science and Engineering at Xi'an Jiaotong University.
+Hello, my name is Xiaoyu Zhang. I'm a Ph.D. student of Prof. Chao Shen in School of Cyber Science and Engineering at Xi'an Jiaotong University.
 My research interests include software engineering, machine learning, and AI testing.
 
 ## Publications

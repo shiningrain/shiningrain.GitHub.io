@@ -35,8 +35,8 @@ Xuanqi Gao, Weipeng Jiang, Juan Zhai, Shiqing Ma, **Xiaoyu Zhang**, Chao Shen
 [***COSTELLO: Contrastive Testing for Embedding-Based Large Language Model as a Service Embeddings***](./papers/Jiang2024FSE.pdf)
 
 Weipeng Jiang, Juan Zhai, Shiqing Ma, **Xiaoyu Zhang**, Chao Shen
-<!-- 
-### [TOSEM-23](https://dl.acm.org/journal/tosem/)
+
+<!-- ### [TOSEM-23](https://dl.acm.org/journal/tosem/)
 [***Seed selection for testing deep neural networks***](./papers/Zhi2023TOSEM.pdf)
 
 Yuhan Zhi, Xiaofei Xie, Chao Shen, Jun Sun, **Xiaoyu Zhang**, Xiaohong Guan -->

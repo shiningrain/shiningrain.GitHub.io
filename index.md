@@ -1,11 +1,22 @@
 # Xiaoyu Zhang
 
 Hello, my name is Xiaoyu Zhang. I'm a Ph.D. student of Prof. Chao Shen in School of Cyber Science and Engineering at Xi'an Jiaotong University.
+I will be a Research Fellow in Prof. Yang Liu's team at Nanyang Technological University, Singapore, around September 2025.
 My research interests include software engineering, machine learning, and AI testing.
 
 **Seeking a Postdoct position.**
 
 ## Recent Publications
+
+### [ACL (2025)](https://2025.aclweb.org/)
+[***The Invisible Hand: Unveiling Provider Bias in Large Language Models for Code Generation***](./papers/Zhang2025ACL.pdf)
+
+**Xiaoyu Zhang**, Juan Zhai, Shiqing Ma, Qingshuang Bao, Weipeng Jiang, Qian Wang, Chao Shen, Yang Liu.
+
+### [TOSEM (2025)](https://dl.acm.org/journal/tosem/)
+[***JailGuard: A Universal Detection Framework for Prompt-based Attacks on LLM Systems***](./papers/Zhang2025TOSEM.pdf)
+
+**Xiaoyu Zhang**, Cen Zhang, Tianlin Li, Yihao Huang, Xiaojun Jia, Ming Hu, Jie Zhang, Yang Liu, Shiqing Ma, Chao Shen.
 
 ### [CSUR (2025)](https://dl.acm.org/journal/csur)
 [***Deep Learning Library Testing: Definition, Methods and Challenges***](./papers/Zhang2025CSUR.pdf)
@@ -54,11 +65,11 @@ Qianyu Guo, Xiaofei Xie, Yi Li, **Xiaoyu Zhang**, Yang Liu, Li Xiaohong, Chao Sh
 
 ## Education
 
-- Visiting Student, Nanyang Technological University, Singapore, (2023 - now)
+- Visiting Student, Nanyang Technological University, Singapore, (2023 - 2025)
 
 - Ph.D in Cyberspace Security, Xi'an Jiaotong University, China, (2020 - now)
 
-- B.S. in Automation, Xi'an Jiaotong University, China, (2016 - 2020)  
+- B.S. in Automation (Young Gifted Program), Xi'an Jiaotong University, China, (2016 - 2020)  
 
 ### Contact
 

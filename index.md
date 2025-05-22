@@ -2,7 +2,9 @@
 
 Hello, my name is Xiaoyu Zhang. I'm a Ph.D. student of Prof. Chao Shen in School of Cyber Science and Engineering at Xi'an Jiaotong University.
 I will be a Research Fellow in Prof. Yang Liu's team at Nanyang Technological University, Singapore, around September 2025.
+
 My research interests include software engineering, machine learning, and AI testing.
+**Looking for undergraduate or graduate students with common research interests to collaborate with**.
 
 ## Recent Publications
 

@@ -1,8 +1,7 @@
 # Xiaoyu Zhang
 
-Hello, my name is Xiaoyu Zhang. I'm a Ph.D. student of Prof. Chao Shen in School of Cyber Science and Engineering at Xi'an Jiaotong University.
-I will be a Research Fellow in Prof. Yang Liu's team at Nanyang Technological University, Singapore, around September 2025.
-
+Hello, my name is Xiaoyu Zhang. I have received my Ph.D. degree from Xi’an Jiaotong University in June 2025, where I studied under Prof. Chao Shen.
+I am now a research fellow in Prof. Yang Liu's team at Nanyang Technological University, Singapore.
 My research interests include software engineering, machine learning, and AI testing.
 **Looking for undergraduate or graduate students with common research interests to collaborate with**.
 
@@ -67,12 +66,12 @@ Qianyu Guo, Xiaofei Xie, Yi Li, **Xiaoyu Zhang**, Yang Liu, Li Xiaohong, Chao Sh
 
 - Visiting Student, Nanyang Technological University, Singapore, (2023 - 2025)
 
-- Ph.D in Cyberspace Security, Xi'an Jiaotong University, China, (2020 - now)
+- Ph.D in Cyberspace Security, Xi'an Jiaotong University, China, (2020 - 2025)
 
 - B.S. in Automation (Young Gifted Program), Xi'an Jiaotong University, China, (2016 - 2020)  
 
 ### Contact
 
-**Email**: zxy0927@stu.xjtu.edu.cn
+**Email**: joshingrain@gmail.com
 
 ![](https://komarev.com/ghpvc/?username=shiningrain)

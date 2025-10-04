@@ -19,7 +19,7 @@
 
 body {
     font-family: var(--font-serif);
-    font-size: 22px;
+    font-size: 16px;
     line-height: 1.8;
     color: var(--text-color);
     background-color: var(--bg-color);
@@ -338,7 +338,7 @@ footer {
 /* Responsive Design */
 @media (max-width: 768px) {
     body {
-        font-size: 18px;
+        font-size: 14px;
         padding: 10px;
     }
 
@@ -392,7 +392,7 @@ footer {
 
 @media (max-width: 480px) {
     body {
-        font-size: 16px;
+        font-size: 12px;
     }
 
     .profile-info h1 {
@@ -432,14 +432,14 @@ footer {
     border: 1px solid #39c5bb;
     color: #39c5bb;
     cursor: pointer;
-    font-size: 14px;
+    font-size: 10px;
     padding: 8px 16px;
     margin-top: 20px;
     position: absolute;
     bottom: 0;
     right: 0;
     opacity: 0.05;
-    pointer-events: auto; 
+    pointer-events: auto;
     border-radius: 4px;
     transition: all 0.3s ease;
 }
@@ -521,7 +521,7 @@ footer {
 .close, .close-image {
     color: #aaa;
     float: right;
-    font-size: 28px;
+    font-size: 21px;
     font-weight: bold;
     cursor: pointer;
     line-height: 20px;

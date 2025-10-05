@@ -8,7 +8,7 @@
 :root {
     --bg-color: #ffffff;
     --text-color: #2c3e50;
-    --link-color: #66ccff;
+    --link-color: #39c5bb;
     --link-hover: #2980b9;
     --border-color: #e0e0e0;
     --accent-color: #34495e;
@@ -275,6 +275,21 @@ section h2::after {
 .edu-content p {
     font-size: 0.95em;
     color: #666;
+}
+
+/* Professional Services Section */
+.service-item {
+    margin-bottom: 20px;
+    opacity: 0;
+    animation: fadeInUp 0.6s ease forwards;
+}
+
+.service-item:nth-child(2) { animation-delay: 0.1s; }
+.service-item:nth-child(3) { animation-delay: 0.2s; }
+
+.service-item p {
+    font-size: 1em;
+    line-height: 1.8;
 }
 
 /* Contact Section */

@@ -9,7 +9,7 @@
     --bg-color: #ffffff;
     --text-color: #2c3e50;
     --link-color: #39c5bb;
-    --link-hover: #2980b9;
+    --link-hover: #66ccff;
     --border-color: #e0e0e0;
     --accent-color: #34495e;
     --light-gray: #f8f9fa;
@@ -47,6 +47,10 @@ header {
 
 .profile-image {
     flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
 }
 
 .profile-image img {
@@ -60,6 +64,17 @@ header {
 
 .profile-image img:hover {
     transform: scale(1.05);
+}
+
+.visitor-map {
+    width: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.visitor-map #clustrmaps {
+    max-width: 100%;
 }
 
 .profile-info h1 {
@@ -556,11 +571,125 @@ footer {
 #imageModal .modal-content {
     padding: 20px;
     text-align: center;
+    max-width: 700px;
+}
+
+.image-modal-content {
+    max-height: 90vh;
+    overflow-y: auto;
 }
 
 #secretImage {
     max-width: 100%;
     border-radius: 8px;
+    margin-bottom: 30px;
+}
+
+/* Leaderboard Styles */
+.leaderboard-section {
+    margin-top: 20px;
+    text-align: left;
+}
+
+.leaderboard-section h3 {
+    color: #39c5bb;
+    font-size: 1.3em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.leaderboard-section h4 {
+    color: var(--accent-color);
+    font-size: 1.1em;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.name-input-section {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 30px;
+    justify-content: center;
+}
+
+.name-input-section input {
+    flex: 1;
+    max-width: 300px;
+    padding: 10px;
+    border: 2px solid #39c5bb;
+    border-radius: 4px;
+    font-size: 1em;
+    font-family: var(--font-serif);
+}
+
+.name-input-section button {
+    background-color: #39c5bb;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+.name-input-section button:hover {
+    background-color: #2da89f;
+}
+
+.leaderboard {
+    background-color: var(--light-gray);
+    padding: 20px;
+    border-radius: 8px;
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+.leaderboard-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.leaderboard-entry {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 12px;
+    background-color: white;
+    border-radius: 6px;
+    border-left: 4px solid #39c5bb;
+    transition: transform 0.2s ease;
+}
+
+.leaderboard-entry:hover {
+    transform: translateX(5px);
+}
+
+.leaderboard-entry .rank {
+    font-weight: 700;
+    color: #39c5bb;
+    min-width: 40px;
+    font-size: 1.1em;
+}
+
+.leaderboard-entry .name {
+    flex: 1;
+    font-weight: 600;
+    color: var(--accent-color);
+    font-size: 1em;
+}
+
+.leaderboard-entry .date {
+    color: #7f8c8d;
+    font-size: 0.85em;
+}
+
+.no-entries {
+    text-align: center;
+    color: #7f8c8d;
+    font-style: italic;
+    padding: 20px;
 }
 
 /* Print Styles */

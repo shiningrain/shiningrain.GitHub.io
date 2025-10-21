@@ -225,10 +225,98 @@ function checkAnswer() {
         secretModal.style.display = 'none';
         imageModal.style.display = 'block';
         errorMsg.textContent = '';
+        loadLeaderboard();
     } else {
         errorMsg.textContent = 'Please Try Again 🎤';
         answerInput.value = '';
     }
+}
+
+// Leaderboard functionality
+const submitNameBtn = document.getElementById('submitName');
+const userNameInput = document.getElementById('userName');
+const leaderboardList = document.getElementById('leaderboardList');
+
+// Load leaderboard from localStorage
+function loadLeaderboard() {
+    const leaderboard = JSON.parse(localStorage.getItem('easterEggLeaderboard') || '[]');
+    displayLeaderboard(leaderboard);
+}
+
+// Display leaderboard
+function displayLeaderboard(leaderboard) {
+    if (leaderboard.length === 0) {
+        leaderboardList.innerHTML = '<p class="no-entries">Be the first to leave your mark!</p>';
+        return;
+    }
+
+    leaderboardList.innerHTML = leaderboard.map((entry, index) => `
+        <div class="leaderboard-entry">
+            <span class="rank">#${index + 1}</span>
+            <span class="name">${escapeHtml(entry.name)}</span>
+            <span class="date">${entry.date}</span>
+        </div>
+    `).join('');
+}
+
+// Escape HTML to prevent XSS
+function escapeHtml(text) {
+    const div = document.createElement('div');
+    div.textContent = text;
+    return div.innerHTML;
+}
+
+// Submit name to leaderboard
+if (submitNameBtn) {
+    submitNameBtn.addEventListener('click', function() {
+        const name = userNameInput.value.trim();
+        if (name.length === 0) {
+            alert('Please enter your name!');
+            return;
+        }
+
+        // Get current leaderboard
+        const leaderboard = JSON.parse(localStorage.getItem('easterEggLeaderboard') || '[]');
+
+        // Check if name already exists
+        if (leaderboard.some(entry => entry.name.toLowerCase() === name.toLowerCase())) {
+            alert('This name is already on the leaderboard!');
+            return;
+        }
+
+        // Add new entry
+        const newEntry = {
+            name: name,
+            date: new Date().toLocaleDateString('en-US', {
+                year: 'numeric',
+                month: 'short',
+                day: 'numeric',
+                hour: '2-digit',
+                minute: '2-digit'
+            })
+        };
+
+        leaderboard.unshift(newEntry); // Add to beginning
+
+        // Save to localStorage
+        localStorage.setItem('easterEggLeaderboard', JSON.stringify(leaderboard));
+
+        // Clear input and reload leaderboard
+        userNameInput.value = '';
+        displayLeaderboard(leaderboard);
+
+        // Show success message
+        alert('🎉 Your name has been added to the Hall of Fame!');
+    });
+}
+
+// Allow Enter key to submit name
+if (userNameInput) {
+    userNameInput.addEventListener('keypress', function(event) {
+        if (event.key === 'Enter') {
+            submitNameBtn.click();
+        }
+    });
 }
 
 console.log('Personal homepage loaded successfully!');

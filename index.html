@@ -16,6 +16,11 @@
             <div class="profile-section">
                 <div class="profile-image">
                     <img src="resource/zxy.jpg" alt="Xiaoyu Zhang" id="profileImg">
+                    <!-- Visitor Map -->
+                    <div class="visitor-map">
+                        <script type='text/javascript' id='mapmyvisitors' src='https://mapmyvisitors.com/map.js?cl=ffffff&d=P88wz_O_xMt9tynJTTUSXbUVL1Dzdv_BYTTnkDfJBNA&co=2980b9&cmo=39c5bb&cmn=ff5353&ct=ffffff'></script>
+                        <!-- <script type="text/javascript" id="mmvst_globe" src="//mapmyvisitors.com/globe.js?d=wmSX6WSorGDgsp_B9EQtAqLnPPSirOzYIYtCJAAPTLQ"></script> -->
+                    </div>
                 </div>
                 <div class="profile-info">
                     <h1>Xiaoyu Zhang</h1>
@@ -241,9 +246,6 @@
         <section id="contact">
             <h2>Contact</h2>
             <p><strong>Email:</strong> <a href="mailto:joshingrain@gmail.com">joshingrain@gmail.com</a></p>
-            <div class="visitor-badge">
-                <img src="https://komarev.com/ghpvc/?username=shiningrain" alt="Profile views">
-            </div>
         </section>
 
         <!-- Footer -->
@@ -266,9 +268,22 @@
 
     <!-- Secret Image Modal -->
     <div id="imageModal" class="modal">
-        <div class="modal-content">
+        <div class="modal-content image-modal-content">
             <span class="close-image">&times;</span>
             <img src="resource/miku.jpg" alt="Secret" id="secretImage">
+            <div class="leaderboard-section">
+                <h3>🎉 Congratulations! Leave Your Mark!</h3>
+                <div class="name-input-section">
+                    <input type="text" id="userName" placeholder="Enter your name..." maxlength="20">
+                    <button id="submitName">Submit</button>
+                </div>
+                <div class="leaderboard">
+                    <h4>🏆 Hall of Fame</h4>
+                    <div id="leaderboardList" class="leaderboard-list">
+                        <!-- Leaderboard entries will be inserted here -->
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 

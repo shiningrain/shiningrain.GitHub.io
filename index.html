@@ -13,32 +13,53 @@
     <div class="container">
         <!-- Header Section -->
         <header>
-            <div class="profile-section">
-                <div class="profile-image">
-                    <img src="resource/zxy.jpg" alt="Xiaoyu Zhang" id="profileImg">
-                    <!-- Visitor Map -->
+            <!-- Top Bar: Title + Google Scholar + Page View -->
+            <div class="top-bar">
+                <h1>Xiaoyu Zhang's Home Page</h1>
+                <div class="top-right">
+                    <a href="https://scholar.google.com/citations?user=g44vbWMAAAAJ" target="_blank" class="google-scholar-link">Google Scholar</a>
                     <div class="visitor-map">
                         <script type='text/javascript' id='mapmyvisitors' src='https://mapmyvisitors.com/map.js?cl=ffffff&d=P88wz_O_xMt9tynJTTUSXbUVL1Dzdv_BYTTnkDfJBNA&co=2980b9&cmo=39c5bb&cmn=ff5353&ct=ffffff'></script>
-                        <!-- <script type="text/javascript" id="mmvst_globe" src="//mapmyvisitors.com/globe.js?d=wmSX6WSorGDgsp_B9EQtAqLnPPSirOzYIYtCJAAPTLQ"></script> -->
                     </div>
                 </div>
-                <div class="profile-info">
-                    <h1>Xiaoyu Zhang</h1>
-                    <p class="subtitle">张笑宇</p>
-                    <p class="bio">
-                        Hello, my name is Xiaoyu Zhang. I have received my Ph.D. degree from Xi'an Jiaotong University in June 2025,
-                        where I studied under Prof. Chao Shen. I am now a research fellow in Prof. Yang Liu's team at Nanyang Technological
-                        University, Singapore. My research interests include <strong>Software Engineering</strong>, <strong>Large Language Models</strong>, and <strong>AI Security/Safety</strong>.
-                    </p>
-                    <p class="highlight">
-                        <strong>Looking for undergraduate or graduate students with common research interests to collaborate with. 🎉</strong>
-                    </p>
-                    <div class="contact-links">
-                        <a href="mailto:joshingrain@gmail.com">Email</a>
-                        <a href="https://github.com/shiningrain" target="_blank">GitHub</a>
-                        <a href="https://scholar.google.com/citations?user=g44vbWMAAAAJ" target="_blank">Google Scholar</a>
-                    </div>
+            </div>
+
+            <!-- Divider Line -->
+            <hr class="header-divider">
+
+            <!-- Profile Section: Photo + Contact Info -->
+            <div class="profile-section-centered">
+                <div class="profile-image">
+                    <img src="resource/xiaoyu.jpg" alt="Xiaoyu Zhang" id="profileImg">
                 </div>
+                <div class="bio-contact">
+                    <strong>Xiaoyu Zhang (张笑宇)</strong><br>
+                    Research Fellow<br>
+                    Nanyang Technological University, Singapore<br>
+                    Cyber Security Research Centre @ NTU (CYSREN)<br>
+                    61 Nanyang Dr, ABN-01b, #14, Singapore 637335<br>
+                    <!-- <a href="mailto:joshingrain@gmail.com"></a> -->
+                    xiaoyu.zhang AT ntu DOT edu DOT sg
+                </div>
+            </div>
+
+            <!-- Divider Line -->
+            <hr class="header-divider">
+
+            <!-- Bio Section -->
+            <div class="bio-section">
+                <p class="bio">
+                    I have received my Ph.D. degree from Xi'an Jiaotong University in June 2025,
+                    where I studied under Prof. <a href="https://gr.xjtu.edu.cn/web/cshen" target="_blank">Chao Shen</a> (沈超).
+                    I am fortunate to be advised by Assoc. Prof. <a href="https://people.cs.umass.edu/~shiqingma/" target="_blank">Shiqing Ma</a> and Asst. Prof. <a href="https://people.cs.umass.edu/~juanzhai/" target="_blank">Juan Zhai</a> during my doctoral studies.
+                    I am now a research fellow in Prof. <a href="https://personal.ntu.edu.sg/yangliu/" target="_blank">Yang Liu</a> (刘杨)'s team at Nanyang Technological University, Singapore.
+                </p>
+                <p class="bio">
+                    My research interests include <strong>Software Engineering</strong>, <strong>LLM Security/Safety</strong>, <strong>Human-AI Interaction</strong>.
+                </p>
+                <p class="highlight">
+                    <strong>👀 Looking for self-motivated undergraduate or graduate students with common research interests to collaborate with. </strong>
+                </p>
             </div>
         </header>
 
@@ -61,15 +82,15 @@
             </div> -->
             <div class="news-item">
                 <span class="date">2025.10</span>
-                <span class="content">Our Paper is accepted to TOSEM</span>
+                <span class="content">🎉 Our Paper is accepted to TOSEM</span>
             </div>
             <div class="news-item">
                 <span class="date">2025.06</span>
-                <span class="content">Successfully defended Ph.D. dissertation at Xi'an Jiaotong University</span>
+                <span class="content">🎉 Successfully defended Ph.D. dissertation at Xi'an Jiaotong University</span>
             </div>
             <div class="news-item">
                 <span class="date">2025.01</span>
-                <span class="content">Our Paper is accepted to ACL 2025</span>
+                <span class="content">🎉 Our Paper is accepted to ACL 2025</span>
             </div>
         </section>
 
@@ -77,135 +98,147 @@
         <section id="publications">
             <h2>Recent Publications</h2>
 
-            <div class="publication">
-                <div class="pub-year">2025</div>
-                <div class="pub-content">
-                    <h3>
-                        <a href="./papers/Zhang2025ACL.pdf" target="_blank">
-                            The Invisible Hand: Unveiling Provider Bias in Large Language Models for Code Generation
-                        </a>
-                    </h3>
-                    <p class="pub-authors"><strong><em>Xiaoyu Zhang</em></strong>, Juan Zhai, Shiqing Ma, Qingshuang Bao, Weipeng Jiang, Qian Wang, Chao Shen, Yang Liu</p>
-                    <p class="pub-venue">ACL 2025</p>
-                </div>
-            </div>
+            <table class="publications-table">
+                <tr class="publication">
+                    <td class="pub-year">2025 (CCF A)</td>
+                    <td class="pub-content">
+                        <h3>
+                            <a href="./papers/Zhang2025ACL.pdf" target="_blank" class="pdf-icon">📄</a>
+                            <a href="./papers/Zhang2025ACL.pdf" target="_blank">
+                                The Invisible Hand: Unveiling Provider Bias in Large Language Models for Code Generation
+                            </a>
+                        </h3>
+                        <p class="pub-authors"><strong><em>Xiaoyu Zhang</em></strong>, Juan Zhai, Shiqing Ma, Qingshuang Bao, Weipeng Jiang, Qian Wang, Chao Shen, Yang Liu</p>
+                        <p class="pub-venue">ACL 2025</p>
+                    </td>
+                </tr>
 
-            <div class="publication">
-                <div class="pub-year">2025</div>
-                <div class="pub-content">
-                    <h3>
-                        <a href="./papers/Zhang2025TOSEM.pdf" target="_blank">
-                            JailGuard: A Universal Detection Framework for Prompt-based Attacks on LLM Systems
-                        </a>
-                    </h3>
-                    <p class="pub-authors"><strong><em>Xiaoyu Zhang</em></strong>, Cen Zhang, Tianlin Li, Yihao Huang, Xiaojun Jia, Ming Hu, Jie Zhang, Yang Liu, Shiqing Ma, Chao Shen</p>
-                    <p class="pub-venue">TOSEM 2025</p>
-                </div>
-            </div>
+                <tr class="publication">
+                    <td class="pub-year">2025 (CCF A)</td>
+                    <td class="pub-content">
+                        <h3>
+                            <a href="./papers/Zhang2025TOSEM.pdf" target="_blank" class="pdf-icon">📄</a>
+                            <a href="./papers/Zhang2025TOSEM.pdf" target="_blank">
+                                JailGuard: A Universal Detection Framework for Prompt-based Attacks on LLM Systems
+                            </a>
+                        </h3>
+                        <p class="pub-authors"><strong><em>Xiaoyu Zhang</em></strong>, Cen Zhang, Tianlin Li, Yihao Huang, Xiaojun Jia, Ming Hu, Jie Zhang, Yang Liu, Shiqing Ma, Chao Shen</p>
+                        <p class="pub-venue">TOSEM 2025</p>
+                    </td>
+                </tr>
 
-            <div class="publication">
-                <div class="pub-year">2025</div>
-                <div class="pub-content">
-                    <h3>
-                        <a href="./papers/Zhang2025TOSEM-1.pdf" target="_blank">
-                            CITADEL: Context Similarity Based Deep Learning Framework Bug Finding
-                        </a>
-                    </h3>
-                    <p class="pub-authors"><strong><em>Xiaoyu Zhang</em></strong>, Juan Zhai, Shiqing Ma, Shiwei Wang, Chao Shen</p>
-                    <p class="pub-venue">TOSEM 2025</p>
-                </div>
-            </div>
+                <tr class="publication">
+                    <td class="pub-year">2025 (CCF A)</td>
+                    <td class="pub-content">
+                        <h3>
+                            <a href="./papers/Zhang2025TOSEM-1.pdf" target="_blank" class="pdf-icon">📄</a>
+                            <a href="./papers/Zhang2025TOSEM-1.pdf" target="_blank">
+                                CITADEL: Context Similarity Based Deep Learning Framework Bug Finding
+                            </a>
+                        </h3>
+                        <p class="pub-authors"><strong><em>Xiaoyu Zhang</em></strong>, Juan Zhai, Shiqing Ma, Shiwei Wang, Chao Shen</p>
+                        <p class="pub-venue">TOSEM 2025</p>
+                    </td>
+                </tr>
 
-            <div class="publication">
-                <div class="pub-year">2025</div>
-                <div class="pub-content">
-                    <h3>
-                        <a href="./papers/Zhang2025CSUR.pdf" target="_blank">
-                            Deep Learning Library Testing: Definition, Methods and Challenges
-                        </a>
-                    </h3>
-                    <p class="pub-authors"><strong><em>Xiaoyu Zhang</em></strong>, Weipeng Jiang, Chao Shen, Qi Li, Qian Wang, Chenhao Lin, Xiaohong Guan</p>
-                    <p class="pub-venue">CSUR 2025</p>
-                </div>
-            </div>
+                <tr class="publication">
+                    <td class="pub-year">2025 (JCR Q1)</td>
+                    <td class="pub-content">
+                        <h3>
+                            <a href="./papers/Zhang2025CSUR.pdf" target="_blank" class="pdf-icon">📄</a>
+                            <a href="./papers/Zhang2025CSUR.pdf" target="_blank">
+                                Deep Learning Library Testing: Definition, Methods and Challenges
+                            </a>
+                        </h3>
+                        <p class="pub-authors"><strong><em>Xiaoyu Zhang</em></strong>, Weipeng Jiang, Chao Shen, Qi Li, Qian Wang, Chenhao Lin, Xiaohong Guan</p>
+                        <p class="pub-venue">CSUR 2025</p>
+                    </td>
+                </tr>
 
-            <div class="publication">
-                <div class="pub-year">2025</div>
-                <div class="pub-content">
-                    <h3>
-                        <a href="./papers/Zhang2025ICLR.pdf" target="_blank">
-                            STAFF: Speculative Coreset Selection for Task-Specific Fine-tuning
-                        </a>
-                    </h3>
-                    <p class="pub-authors"><strong><em>Xiaoyu Zhang</em></strong>, Juan Zhai, Shiqing Ma, Chao Shen, Tianlin Li, Weipeng Jiang, Yang Liu</p>
-                    <p class="pub-venue">ICLR 2025</p>
-                </div>
-            </div>
+                <tr class="publication">
+                    <td class="pub-year">2025</td>
+                    <td class="pub-content">
+                        <h3>
+                            <a href="./papers/Zhang2025ICLR.pdf" target="_blank" class="pdf-icon">📄</a>
+                            <a href="./papers/Zhang2025ICLR.pdf" target="_blank">
+                                STAFF: Speculative Coreset Selection for Task-Specific Fine-tuning
+                            </a>
+                        </h3>
+                        <p class="pub-authors"><strong><em>Xiaoyu Zhang</em></strong>, Juan Zhai, Shiqing Ma, Chao Shen, Tianlin Li, Weipeng Jiang, Yang Liu</p>
+                        <p class="pub-venue">ICLR 2025</p>
+                    </td>
+                </tr>
 
-            <div class="publication">
-                <div class="pub-year">2024</div>
-                <div class="pub-content">
-                    <h3>
-                        <a href="./papers/Zhang2024TOSEM.pdf" target="_blank">
-                            DREAM: Debugging and Repairing AutoML Pipelines
-                        </a>
-                    </h3>
-                    <p class="pub-authors"><strong><em>Xiaoyu Zhang</em></strong>, Juan Zhai, Shiqing Ma, Xiaohong Guan, Chao Shen</p>
-                    <p class="pub-venue">TOSEM 2024</p>
-                </div>
-            </div>
+                <tr class="publication">
+                    <td class="pub-year">2024 (CCF A)</td>
+                    <td class="pub-content">
+                        <h3>
+                            <a href="./papers/Zhang2024TOSEM.pdf" target="_blank" class="pdf-icon">📄</a>
+                            <a href="./papers/Zhang2024TOSEM.pdf" target="_blank">
+                                DREAM: Debugging and Repairing AutoML Pipelines
+                            </a>
+                        </h3>
+                        <p class="pub-authors"><strong><em>Xiaoyu Zhang</em></strong>, Juan Zhai, Shiqing Ma, Xiaohong Guan, Chao Shen</p>
+                        <p class="pub-venue">TOSEM 2024</p>
+                    </td>
+                </tr>
 
-            <div class="publication">
-                <div class="pub-year">2024</div>
-                <div class="pub-content">
-                    <h3>
-                        <a href="./papers/Zhang2024TDSC.pdf" target="_blank">
-                            An Automated Monitoring and Repairing System for DNN Training
-                        </a>
-                    </h3>
-                    <p class="pub-authors"><strong><em>Xiaoyu Zhang</em></strong>, Chao Shen, Shiqing Ma, Juan Zhai, Chenhao Lin</p>
-                    <p class="pub-venue">TDSC 2024</p>
-                </div>
-            </div>
+                <tr class="publication">
+                    <td class="pub-year">2024 (CCF A)</td>
+                    <td class="pub-content">
+                        <h3>
+                            <a href="./papers/Zhang2024TDSC.pdf" target="_blank" class="pdf-icon">📄</a>
+                            <a href="./papers/Zhang2024TDSC.pdf" target="_blank">
+                                An Automated Monitoring and Repairing System for DNN Training
+                            </a>
+                        </h3>
+                        <p class="pub-authors"><strong><em>Xiaoyu Zhang</em></strong>, Chao Shen, Shiqing Ma, Juan Zhai, Chenhao Lin</p>
+                        <p class="pub-venue">TDSC 2024</p>
+                    </td>
+                </tr>
 
-            <div class="publication">
-                <div class="pub-year">2024</div>
-                <div class="pub-content">
-                    <h3>
-                        <a href="./papers/Gao2024ISSTA.pdf" target="_blank">
-                            Efficient DNN-Powered Software with Fair Sparse Models
-                        </a>
-                    </h3>
-                    <p class="pub-authors">Xuanqi Gao, Weipeng Jiang, Juan Zhai, Shiqing Ma, <strong><em>Xiaoyu Zhang</em></strong>, Chao Shen</p>
-                    <p class="pub-venue">ISSTA 2024</p>
-                </div>
-            </div>
+                <tr class="publication">
+                    <td class="pub-year">2024 (CCF A)</td>
+                    <td class="pub-content">
+                        <h3>
+                            <a href="./papers/Gao2024ISSTA.pdf" target="_blank" class="pdf-icon">📄</a>
+                            <a href="./papers/Gao2024ISSTA.pdf" target="_blank">
+                                Efficient DNN-Powered Software with Fair Sparse Models
+                            </a>
+                        </h3>
+                        <p class="pub-authors">Xuanqi Gao, Weipeng Jiang, Juan Zhai, Shiqing Ma, <strong><em>Xiaoyu Zhang</em></strong>, Chao Shen</p>
+                        <p class="pub-venue">ISSTA 2024</p>
+                    </td>
+                </tr>
 
-            <div class="publication">
-                <div class="pub-year">2024</div>
-                <div class="pub-content">
-                    <h3>
-                        <a href="./papers/Jiang2024FSE.pdf" target="_blank">
-                            COSTELLO: Contrastive Testing for Embedding-Based Large Language Model as a Service Embeddings
-                        </a>
-                    </h3>
-                    <p class="pub-authors">Weipeng Jiang, Juan Zhai, Shiqing Ma, <strong><em>Xiaoyu Zhang</em></strong>, Chao Shen</p>
-                    <p class="pub-venue">FSE 2024</p>
-                </div>
-            </div>
+                <tr class="publication">
+                    <td class="pub-year">2024 (CCF A)</td>
+                    <td class="pub-content">
+                        <h3>
+                            <a href="./papers/Jiang2024FSE.pdf" target="_blank" class="pdf-icon">📄</a>
+                            <a href="./papers/Jiang2024FSE.pdf" target="_blank">
+                                COSTELLO: Contrastive Testing for Embedding-Based Large Language Model as a Service Embeddings
+                            </a>
+                        </h3>
+                        <p class="pub-authors">Weipeng Jiang, Juan Zhai, Shiqing Ma, <strong><em>Xiaoyu Zhang</em></strong>, Chao Shen</p>
+                        <p class="pub-venue">FSE 2024</p>
+                    </td>
+                </tr>
 
-            <div class="publication">
-                <div class="pub-year">2021</div>
-                <div class="pub-content">
-                    <h3>
-                        <a href="./papers/Zhang2021ICSE.pdf" target="_blank">
-                            AUTOTRAINER: An Automatic DNN Training Problem Detection and Repair System
-                        </a>
-                    </h3>
-                    <p class="pub-authors"><strong><em>Xiaoyu Zhang</em></strong>, Juan Zhai, Shiqing Ma, Chao Shen</p>
-                    <p class="pub-venue">ICSE 2021</p>
-                </div>
-            </div>
+                <tr class="publication">
+                    <td class="pub-year">2021 (CCF A)</td>
+                    <td class="pub-content">
+                        <h3>
+                            <a href="./papers/Zhang2021ICSE.pdf" target="_blank" class="pdf-icon">📄</a>
+                            <a href="./papers/Zhang2021ICSE.pdf" target="_blank">
+                                AUTOTRAINER: An Automatic DNN Training Problem Detection and Repair System
+                            </a>
+                        </h3>
+                        <p class="pub-authors"><strong><em>Xiaoyu Zhang</em></strong>, Juan Zhai, Shiqing Ma, Chao Shen</p>
+                        <p class="pub-venue">ICSE 2021</p>
+                    </td>
+                </tr>
+            </table>
         </section>
 
         <!-- Education Section -->
@@ -228,7 +261,7 @@
             <div class="education-item">
                 <div class="edu-year">2016 - 2020</div>
                 <div class="edu-content">
-                    <h3>B.S. in Automation (Young Gifted Program)</h3>
+                    <h3>B.S. in Automation (<a href="https://zs.xjtu.edu.cn/info/1668/6661.htm" target="_blank">Young Gifted Program</a>)</h3>
                     <p>Xi'an Jiaotong University, China</p>
                 </div>
             </div>
@@ -238,7 +271,7 @@
         <section id="services">
             <h2>Services</h2>
             <div class="service-item">
-                <p><strong>Reviewer:</strong> ICLR 2026, TOSEM, TCYB</p>
+                <p><strong>Reviewer:</strong> ICLR 2026, TOSEM, TCYB, TNSE</p>
             </div>
             <div class="service-item">
                 <p><strong>AE Committee Member:</strong> ICSE 2025, ISSTA 2024</p>
@@ -260,14 +293,14 @@
         </section>
 
         <!-- Contact Section -->
-        <section id="contact">
+        <!-- <section id="contact">
             <h2>Contact</h2>
             <p><strong>Email:</strong> <a href="mailto:joshingrain@gmail.com">joshingrain@gmail.com</a></p>
-        </section>
+        </section> -->
 
         <!-- Footer -->
         <footer>
-            <p>&copy; 2025 Xiaoyu Zhang. All rights reserved.</p>
+            <p>&copy; 2026 Xiaoyu Zhang. All rights reserved.</p>
         </footer>
     </div>
 

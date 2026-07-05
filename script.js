@@ -232,15 +232,56 @@ function checkAnswer() {
     }
 }
 
-// Leaderboard functionality
+// ===== Leaderboard functionality (shared & persistent via JSONBin.io) =====
+// 一次性配置：在 https://jsonbin.io 注册后，填入下面两个值。
+//   1. binId    —— 创建一个 bin（初始内容填 {"leaderboard": []}）后得到的 Bin ID
+//   2. accessKey —— 在 "API Keys" 页面创建的 Access Key（权限勾选 Read + Update）
+const JSONBIN_CONFIG = {
+    binId: '6a4a14d7da38895dfe301e8b',
+    accessKey: '$2a$10$7385sTAqYdcJ3afWuqy/CObX5SPvQPGNwuomZbPImH/QNq5ZTqv9W'
+};
+const JSONBIN_BASE = 'https://api.jsonbin.io/v3/b';
+
 const submitNameBtn = document.getElementById('submitName');
 const userNameInput = document.getElementById('userName');
 const leaderboardList = document.getElementById('leaderboardList');
 
-// Load leaderboard from localStorage
-function loadLeaderboard() {
-    const leaderboard = JSON.parse(localStorage.getItem('easterEggLeaderboard') || '[]');
-    displayLeaderboard(leaderboard);
+// 从 JSONBin 读取排行榜（返回数组）
+async function fetchLeaderboard() {
+    const res = await fetch(`${JSONBIN_BASE}/${JSONBIN_CONFIG.binId}/latest`, {
+        headers: {
+            'X-Access-Key': JSONBIN_CONFIG.accessKey,
+            'X-Bin-Meta': 'false'
+        }
+    });
+    if (!res.ok) throw new Error(`Read failed: ${res.status}`);
+    const data = await res.json();
+    return Array.isArray(data.leaderboard) ? data.leaderboard : [];
+}
+
+// 把排行榜写回 JSONBin
+async function saveLeaderboard(leaderboard) {
+    const res = await fetch(`${JSONBIN_BASE}/${JSONBIN_CONFIG.binId}`, {
+        method: 'PUT',
+        headers: {
+            'Content-Type': 'application/json',
+            'X-Access-Key': JSONBIN_CONFIG.accessKey
+        },
+        body: JSON.stringify({ leaderboard })
+    });
+    if (!res.ok) throw new Error(`Write failed: ${res.status}`);
+}
+
+// 载入并显示排行榜
+async function loadLeaderboard() {
+    leaderboardList.innerHTML = '<p class="no-entries">Loading…</p>';
+    try {
+        const leaderboard = await fetchLeaderboard();
+        displayLeaderboard(leaderboard);
+    } catch (err) {
+        console.error(err);
+        leaderboardList.innerHTML = '<p class="no-entries">Failed to load leaderboard 😢</p>';
+    }
 }
 
 // Display leaderboard
@@ -268,45 +309,53 @@ function escapeHtml(text) {
 
 // Submit name to leaderboard
 if (submitNameBtn) {
-    submitNameBtn.addEventListener('click', function() {
+    submitNameBtn.addEventListener('click', async function() {
         const name = userNameInput.value.trim();
         if (name.length === 0) {
             alert('Please enter your name!');
             return;
         }
 
-        // Get current leaderboard
-        const leaderboard = JSON.parse(localStorage.getItem('easterEggLeaderboard') || '[]');
+        submitNameBtn.disabled = true;
+        try {
+            // Get the latest shared leaderboard
+            const leaderboard = await fetchLeaderboard();
 
-        // Check if name already exists
-        if (leaderboard.some(entry => entry.name.toLowerCase() === name.toLowerCase())) {
-            alert('This name is already on the leaderboard!');
-            return;
+            // Check if name already exists
+            if (leaderboard.some(entry => entry.name.toLowerCase() === name.toLowerCase())) {
+                alert('This name is already on the leaderboard!');
+                return;
+            }
+
+            // Add new entry
+            const newEntry = {
+                name: name,
+                date: new Date().toLocaleDateString('en-US', {
+                    year: 'numeric',
+                    month: 'short',
+                    day: 'numeric',
+                    hour: '2-digit',
+                    minute: '2-digit'
+                })
+            };
+
+            leaderboard.unshift(newEntry); // Add to beginning
+
+            // Persist to the shared store
+            await saveLeaderboard(leaderboard);
+
+            // Clear input and refresh display
+            userNameInput.value = '';
+            displayLeaderboard(leaderboard);
+
+            // Show success message
+            alert('🎉 Your name has been added to the Hall of Fame!');
+        } catch (err) {
+            console.error(err);
+            alert('Something went wrong, please try again later 😢');
+        } finally {
+            submitNameBtn.disabled = false;
         }
-
-        // Add new entry
-        const newEntry = {
-            name: name,
-            date: new Date().toLocaleDateString('en-US', {
-                year: 'numeric',
-                month: 'short',
-                day: 'numeric',
-                hour: '2-digit',
-                minute: '2-digit'
-            })
-        };
-
-        leaderboard.unshift(newEntry); // Add to beginning
-
-        // Save to localStorage
-        localStorage.setItem('easterEggLeaderboard', JSON.stringify(leaderboard));
-
-        // Clear input and reload leaderboard
-        userNameInput.value = '';
-        displayLeaderboard(leaderboard);
-
-        // Show success message
-        alert('🎉 Your name has been added to the Hall of Fame!');
     });
 }
 
